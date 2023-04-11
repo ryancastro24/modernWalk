@@ -45,7 +45,6 @@
 
         
     </div>
-
     <div class="flex flex-col gap-2 mt-10">
         <label for="picture">Shoe Image</label>
         <input wire:change="$emit('fileChoosen')" class="py-2 px-3  text-white" id="image" type="file" placeholder="enter image">
@@ -60,11 +59,11 @@
 </div>
 {{-- table --}}
 
-<div class="p-20 flex items-center justify-center gap-10">
+<div class="p-10 flex items-center flex-wrap justify-center gap-10">
     @foreach ($shoesData as $value )
      
     
-    <div class="w-72 bg-slate-900 gap-2 text-white items-center justify-center p-10 rounded shadow-lg flex flex-col">
+    <div class="w-72 bg-slate-900 gap-2 text-white items-center justify-center p-5 rounded shadow-lg flex flex-col">
     
 
     <img src="{{ 'storage/'.$value->image}}" alt="">
@@ -77,7 +76,6 @@
 
     
 </div>
-
 
 
 </div>

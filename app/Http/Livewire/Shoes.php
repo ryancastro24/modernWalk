@@ -78,7 +78,7 @@ public function storeImage()
     public function render()
     {
         return view('livewire.shoes', [
-            'shoesData' => Shoe::latest()->paginate(5)
+            'shoesData' => Shoe::all()
         ]);
     }
 }
